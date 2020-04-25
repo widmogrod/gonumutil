@@ -2,7 +2,7 @@ package gonumutil
 
 import "gonum.org/v1/plot"
 
-func ExampleConstantNumTicker() {
+func ExampleNewConstantNumTicker() {
 	p, err := plot.New()
 	if err != nil {
 		panic(err)
