@@ -1,5 +1,5 @@
 # gonumutil
-GoNum utility functions
+[GoNum](https://github.com/gonum) utility functions
 
 ## NewConstantNumTicker & NewConstantTicker
 Example demonstrates how to change scale of `X` and `Y` axis to have constant distance between markers
@@ -11,11 +11,6 @@ if err != nil {
 p.Title.Text = "Average CPU utilization in percentage"
 p.X.Tick.Marker = gonumutil.NewConstantNumTicker(1)
 p.Y.Tick.Marker = gonumutil.NewConstantNumTicker(5)
-
-// equivalent function as above but help
-p.X.Tick.Marker = NewConstantTicker("%1.0f", 1.0)
-p.Y.Tick.Marker = NewConstantTicker("%1.0f", 5.0)
-
 ```
 
 ## NewConstantTicker
