@@ -1,8 +1,8 @@
 # gonumutil
 [GoNum](https://github.com/gonum) utility functions
 
-## NewConstantNumTicker & NewConstantTicker
-Example demonstrates how to change scale of `X` and `Y` axis to have constant distance between markers
+## NewConstantNumTicker
+The example demonstrates how to change the scale of the X and Y axis to have constant distance between markers
 ```go
 p, err := plot.New()
 if err != nil {
@@ -14,7 +14,7 @@ p.Y.Tick.Marker = gonumutil.NewConstantNumTicker(5)
 ```
 
 ## NewConstantTicker
-Equivalent function as above but with more degree of freedom, that enable label customization.
+Equivalent function to `NewConstantNumTicker` but with more degree of freedom, that enables label customization.
 ```go
 p, err := plot.New()
 if err != nil {
